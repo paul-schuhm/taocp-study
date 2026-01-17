@@ -5,4 +5,4 @@ Implementations of various algorithms presented in [the multivolume *The Art Of 
 
 ## Useful references
 
-- [Mixed Radis numeral systems](https://en.wikipedia.org/wiki/Mixed_radix), Wikipedia entry on non-standard positional numeral systems, in whitch the numerical base varies from position to position
+- [Mixed Radis numeral systems](https://en.wikipedia.org/wiki/Mixed_radix), Wikipedia entry on non-standard positional numeral systems, in which the numerical base varies from position to position
