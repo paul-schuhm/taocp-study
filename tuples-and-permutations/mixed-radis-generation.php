@@ -5,14 +5,14 @@
 */
 
 /*Print each permutation visited*/
-function visit(array $a, string $separator = " ", bool $reverse_representation = false): void{
+function visit(array $a, string $separator = " ", bool $print_reversed = false): void{
   $tuple = [];
 
   //Discard first element (dummy)
   for($i = 1 ; $i < count($a) ; $i++)
     $tuple[] = $a[$i];
 
-  if($reverse_representation)
+  if($print_reversed)
     $tuple = array_reverse($tuple);
 
   printf("%s\n", implode($separator, $tuple));
@@ -31,14 +31,14 @@ $reverse_representation = false;
 $a = [ 1 , 1];
 $m = [ 13, 32] ;
 $separator="/";
-$reverse_representation = true;
+$print_reversed = true;
 */
 
 //1. Initialisation
 $a = [ 1 , 1];
 $m = [ 13, 32] ;
 $separator="/";
-$reverse_representation = true;
+$print_reversed = true;
 
 if(count($a) != count($m)){
   trigger_error("Representation and base vectors should be same length (one base by position)\n");
@@ -52,7 +52,7 @@ $n = count($a) - 1;
 
 while(true){
   //2. Visit
-  visit($a, $separator, $reverse_representation);
+  visit($a, $separator, $print_reversed);
 
   //3. Prepare to add
   $j = $n;
